@@ -8,6 +8,10 @@ public class User implements Parcelable {
     // create implementation Parcelable to this class
     private String username,name, company,location, photo, repository, follower,following;
 
+    public User() {
+
+    }
+
     public String getUsername() {
         return username;
     }

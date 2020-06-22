@@ -67,11 +67,13 @@ public class UserData {
 
         for (String[] mData : data) {
             user = new User();
-            user.setName(mData[0]);
-            user.setElevation(mData[1]);
-            user.setPhoto(mData[2]);
-            user.setDescription(mData[3]);
-            user.setLocation(mData[4]);
+            user.setUsername(mData[0]);
+            user.setName(mData[1]);
+            user.setCompany(mData[2]);
+            user.setLocation(mData[3]);
+            user.setRepository(mData[4]);
+            user.setFollower(mData[5]);
+            user.setFollowing(mData[6]);
 
             list.add(user);
         }
