@@ -6,11 +6,7 @@ import android.os.Parcelable;
 public class User implements Parcelable {
 
     // create implementation Parcelable to this class
-    private String username,name, company,location, photo, repository, follower,following;
-
-    public User() {
-
-    }
+    private String username,name, company,location, photo, repository, follower,following,avatar;
 
     public String getUsername() {
         return username;
@@ -76,6 +72,14 @@ public class User implements Parcelable {
         this.following = following;
     }
 
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
     public static Creator<User> getCREATOR() {
         return CREATOR;
     }
@@ -89,6 +93,7 @@ public class User implements Parcelable {
         repository = in.readString();
         follower = in.readString();
         following = in.readString();
+        avatar = in.readString();
     }
 
     public static final Creator<User> CREATOR = new Creator<User>() {
@@ -118,5 +123,6 @@ public class User implements Parcelable {
         dest.writeString(repository);
         dest.writeString(follower);
         dest.writeString(following);
+        dest.writeString(avatar);
     }
 }
