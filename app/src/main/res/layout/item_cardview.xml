@@ -30,7 +30,7 @@
         <TextView
             android:textStyle="bold"
             android:textSize="20sp"
-            android:id="@+id/tv_name_card"
+            android:id="@+id/tv_username_card"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -44,7 +44,7 @@
         <TextView
             android:maxLines="3"
             android:ellipsize="end"
-            android:id="@+id/tv_desc_card"
+            android:id="@+id/tv_repository_card"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -53,7 +53,7 @@
             android:text="@string/lorem"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/img_card"
-            app:layout_constraintTop_toBottomOf="@+id/tv_name_card" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_username_card" />
 
         <Button
             android:textColor="@android:color/white"

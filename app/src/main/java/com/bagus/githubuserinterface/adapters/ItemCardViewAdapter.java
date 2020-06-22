@@ -58,7 +58,7 @@ public class ItemCardViewAdapter extends RecyclerView.Adapter<ItemCardViewAdapte
             @Override
             public void onClick(View view) {
                 Intent detailActivity = new Intent(context, DetailActivity.class);
-                detailActivity.putExtra(DetailActivity.EXTRA_MOUNTAIN, listMountain.get(position));
+                detailActivity.putExtra(DetailActivity.EXTRA_USER, listUser.get(position));
                 context.startActivity(detailActivity);
             }
         });
@@ -71,14 +71,14 @@ public class ItemCardViewAdapter extends RecyclerView.Adapter<ItemCardViewAdapte
 
     public class CardViewHolder extends RecyclerView.ViewHolder {
         ImageView imgPhoto;
-        TextView tvName, tvDescription;
+        TextView tvName, tvUsername,tvCompany,tvLocation,tvRepository,tvFollower,tvFollowing;
         Button button;
 
         public CardViewHolder(@NonNull View itemView) {
             super(itemView);
             imgPhoto = itemView.findViewById(R.id.img_card);
-            tvName = itemView.findViewById(R.id.tv_name_card);
-            tvDescription = itemView.findViewById(R.id.tv_desc_card);
+            tvUsername = itemView.findViewById(R.id.tv_username_card);
+            tvRepository = itemView.findViewById(R.id.tv_repository_card);
             button = itemView.findViewById(R.id.button);
         }
     }
