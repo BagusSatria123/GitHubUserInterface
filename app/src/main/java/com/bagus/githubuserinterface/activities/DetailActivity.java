@@ -26,7 +26,7 @@ public class DetailActivity extends AppCompatActivity {
         TextView company = findViewById(R.id.tv_company_detail);
         TextView location = findViewById(R.id.tv_location_detail);
         TextView repository = findViewById(R.id.tv_repository_detail);
-        TextView follower = findViewById(R.id.tv_followers_detail);
+        TextView follower = findViewById(R.id.tv_follower_detail);
         TextView following = findViewById(R.id.tv_following_detail);
 
         User user = getIntent().getParcelableExtra(Intent.EXTRA_USER);

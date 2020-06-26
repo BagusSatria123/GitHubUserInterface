@@ -45,12 +45,8 @@ public class ItemCardViewAdapter extends RecyclerView.Adapter<ItemCardViewAdapte
     @Override
     public void onBindViewHolder(@NonNull CardViewHolder holder, final int position) {
         holder.tvUsername.setText(getListUser().get(position).getUsername());
-        holder.tvName.setText(getListUser().get(position).getName());
-        holder.tvCompany.setText(getListUser().get(position).getCompany());
-        holder.tvLocation.setText(getListUser().get(position).getLocation());
         holder.tvRepository.setText(getListUser().get(position).getRepository());
-        holder.tvFollower.setText(getListUser().get(position).getFollower());
-        holder.tvFollowing.setText(getListUser().get(position).getFollowing());
+
         Glide.with(context).load(getListUser().get(position).getPhoto()).into(holder.imgPhoto);
 
         // intent parcel able to detail
